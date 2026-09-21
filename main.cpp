@@ -40,6 +40,8 @@ int main( int argc, char * argv[] )
 		}
 	}
 
+	
+
 	loan_amount = arguments[0];
 	yearly_interest_rate = arguments[1];
 	monthly_payment = arguments[2];
