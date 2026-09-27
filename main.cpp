@@ -1,6 +1,6 @@
 /* File Name: main.cpp
  * Authors: Dominc Renda and Shaun Butterfield
- * This program calculates and displaysa table for a loan. Determining number of months required to repay loan and total interest paid
+ * This program calculates and displays a table for a loan. Determining number of months required to repay loan and total interest paid
  */
 
 #include <iostream>
@@ -12,7 +12,7 @@ using namespace std;
 
 //pass in space-delimited arguments when you call the executable
 //Example: ./a.out 1 2 3.3
-int main( int argc, char * argv[] )
+int main(int argc, char * argv[])
 {
 	if (argc > 4) 
 	{
@@ -87,6 +87,13 @@ int main( int argc, char * argv[] )
 		{ cout << "Insufficient payment." << endl;
 		 return -2;
 		}
+
+	// displays the values passed in through the command line - Dominic
+	cout << "Loan Amount: " << loan_amount << endl;
+	cout << "Interest Rate (% per year): " << yearly_interest_rate << endl;
+	cout << "Monthly Payments: " << monthly_payment << endl;
+	cout << endl;
+	
 	//makes so dollar amounts print with 2 decimal places
 	cout.setf(ios::fixed);
 	cout.setf(ios::showpoint);
